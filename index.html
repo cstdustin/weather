@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+<div class="container">
+    <div class="search">
+        <input type="text" placeholder="Enter city name or first 3 letter of postalcode" spellcheck="false">
+        <button><img src="images/search.png"></button>
+    </div>
+    <div class="error">
+        <p>Invalid city name or postalcode</p>
+    </div>
+    <div class="weather">
+        <img src="./images/rain.png" class="weatherIcon">
+        <h3 class="weatherStatus">Sunny</h3>
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+            <div class="col">
+                <img src="./images/humidity.png">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/wind.png">
+                <div>
+                    <p class="wind">15 mp/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="forecast">3 Days Forecast</h4>
+
+        <div class="details">
+            <div class="col">
+                <img src="./images/rain.png" class="forecastWeatherIcon_0">
+                <div>
+                    <p class="date_0">9 Aug</p>
+                    <p class="forecastMaxTemp_0">25°C</p>
+                    <p class="forecastMinTemp_0">15°C</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/rain.png" class="forecastWeatherIcon_1">
+                <div>
+                    <p class="date_1">9 Aug</p>
+                    <p class="forecastMaxTemp_1">25°C</p>
+                    <p class="forecastMinTemp_1">15°C</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/rain.png" class="forecastWeatherIcon_2">
+                <div>
+                    <p class="date_2">9 Aug</p>
+                    <p class="forecastMaxTemp_2">25°C</p>
+                    <p class="forecastMinTemp_2">15°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="./scripts.js"></script>
+
+</body>
+</html>
